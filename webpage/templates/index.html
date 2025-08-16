@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+
+
+{% block content %}
+  <h1>{{ section.title }}</h1>
+
+  {{ section.content | safe }}
+{% endblock content %}

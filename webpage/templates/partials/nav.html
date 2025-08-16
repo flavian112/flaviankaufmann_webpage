@@ -1,0 +1,14 @@
+<header>
+  <nav>
+    {% set here = current_path | default(value="/") %}
+
+    <a href="{{ get_url(path='') }}"
+       {% if here == '/' %}aria-current="page"{% endif %}>Home</a>
+
+    <a href="{{ get_url(path='blog') }}"
+       {% if here | starts_with(path='/blog') %}aria-current="page"{% endif %}>Blog</a>
+
+    <a href="{{ get_url(path='links') }}"
+       {% if here | starts_with(path='/links') %}aria-current="page"{% endif %}>Links</a>
+  </nav>
+</header>

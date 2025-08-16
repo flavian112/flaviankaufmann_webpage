@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+
+  <title>
+    {% block title %}
+      {% if section is defined and section.title %}
+        {{ section.title }} | {{ config.title }}
+      {% elif page is defined and page.title %}
+        {{ page.title }} | {{ config.title }}
+      {% else %}
+        {{ config.title }}
+      {% endif %}
+    {% endblock title %}
+  </title>
+
+</head>
+
+<body>
+  {% include "partials/nav.html" %}
+
+  <main>
+    {% block content %}{% endblock content %}
+  </main>
+
+  <footer>
+    <small>© {{ now() | date(format="%Y") }}</small>
+  </footer>
+</body>
+
+</html>
