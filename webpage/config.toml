@@ -1,11 +1,10 @@
 base_url = "https://flaviankaufmann.ch"
 title = "Flavian Kaufmann"
+
 compile_sass = true
 build_search_index = false
-taxonomies = [{ name = "tags", rss = true }]
 
 [markdown]
 highlight_code = true
 
 [extra]
-paginate_path = "page"

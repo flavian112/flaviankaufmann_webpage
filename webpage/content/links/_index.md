@@ -1,8 +1,7 @@
 +++
 title = "Links"
-template = "links.html"
+template = "section.html"
 +++
-
 
 - [Mail](https://mail.flaviankaufmann.ch)
 - [Cloud](https://cloud.flaviankaufmann.ch)
