@@ -4,7 +4,7 @@
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
-{% for page in section.pages %}
+{% for page in section.pages | sort(attribute="date") | reverse %}
 <div>
   <a href="{{ page.permalink }}">{{ page.title }}</a>
 </div>

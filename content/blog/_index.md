@@ -1,4 +1,4 @@
 +++
 title = "Blog"
-template = "section.html"
+template = "blog.html"
 +++

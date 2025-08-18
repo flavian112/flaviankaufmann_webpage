@@ -15,7 +15,7 @@ $font_size: 12pt;
 body {
   width: 60%;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 a {
@@ -57,5 +57,11 @@ h3 {
 
 .footer {
   color: $color_muted;
+  padding: 20px;
   text-align: center;
+}
+
+.blogentry {
+  padding: 10px 0px;
+
 }
