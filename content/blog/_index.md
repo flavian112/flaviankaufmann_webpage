@@ -1,5 +1,4 @@
 +++
-title = "Home"
+title = "Blog"
 template = "section.html"
 +++
-

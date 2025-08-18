@@ -1,0 +1,56 @@
+$color_primary: black;
+$color_accent: dodgerblue;
+$color_background: white;
+
+$font: monospace;
+$font_size: 12pt;
+
+* {
+  color: $color_primary;
+  background-color: $color_background;
+  font-family: $font;
+  font-size: $font_size;
+  # outline: solid;
+}
+
+body {
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.0rem;
+}
+
+a {
+  color: $color_accent;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+footer {
+   text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

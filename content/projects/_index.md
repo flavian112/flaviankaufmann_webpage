@@ -1,6 +1,4 @@
 +++
-title = "About"
+title = "Projects"
 template = "section.html"
 +++
-
-
