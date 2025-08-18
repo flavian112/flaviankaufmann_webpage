@@ -16,8 +16,7 @@ Flavian Kaufmann<br>
 Owner: Flavian Kaufmann &lt;flavian@flaviankaufmann.ch&gt;<br>
 Fingerprint: 914D 6F56 D22D AC24 FBB0  0954 D327 B8DE 9FCB 25FA
 
-
-```text
+<pre style="white-space:pre-wrap;">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mDMEYcCFuhYJKwYBBAHaRw8BAQdA0Fgdp5XlbOshwyTelVZEMwnSINgwuzZBw6JF
@@ -61,4 +60,4 @@ vhPFxrIUsNQtv1jYaAALLdL+7fF84Xcj8NhCVz8kwmSZPNTTHrwzB0ZJvTcOnUYB
 uBAmzAgA/RXrGtnnS+amPEqoctw8Vpb+cW6+SxXKrhx7dw2o+nUM
 =Ubkx
 -----END PGP PUBLIC KEY BLOCK-----
-```
+</pre>

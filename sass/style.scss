@@ -1,22 +1,31 @@
 $color_primary: black;
 $color_accent: dodgerblue;
+$color_muted: slategray;
 $color_background: white;
+$color_background_secondary: whitesmoke;
 
 $font: monospace;
 $font_size: 12pt;
 
 * {
-  color: $color_primary;
-  background-color: $color_background;
   font-family: $font;
   font-size: $font_size;
-  # outline: solid;
 }
 
 body {
   width: 60%;
   margin: auto;
   padding: 10px;
+}
+
+a {
+  color: $color_accent;
+  font-size: $font-size;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 h1 {
@@ -31,8 +40,9 @@ h3 {
   font-size: 1.0rem;
 }
 
-a {
+.navlink {
   color: $color_accent;
+  font-size: $font-size;
   text-decoration: none;
 
   &:hover {
@@ -40,17 +50,12 @@ a {
   }
 }
 
-footer {
-   text-align: center;
-}
-
-nav {
+.navbar {
   display: flex;
   gap: 2rem;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.footer {
+  color: $color_muted;
+  text-align: center;
 }

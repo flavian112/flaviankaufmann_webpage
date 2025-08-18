@@ -1,4 +1,5 @@
 +++
 title = "Projects"
-template = "section.html"
+template = "projects.html"
 +++
+

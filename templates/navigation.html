@@ -1,20 +1,19 @@
-<header>
-  <nav>
+<nav>
 
+  <div class="navbar">
     {% set section = get_section(path="_index.md") %}
-    <a href="{{ section.permalink }}">{{ section.title }}</a>
+    <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
 
     {% set section = get_section(path="links/_index.md") %}
-    <a href="{{ section.permalink }}">{{ section.title }}</a>
+    <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
 
     {% set section = get_section(path="blog/_index.md") %}
-    <a href="{{ section.permalink }}">{{ section.title }}</a>
+    <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
 
     {% set section = get_section(path="projects/_index.md") %}
-    <a href="{{ section.permalink }}">{{ section.title }}</a>
+    <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
 
     {% set section = get_section(path="about/_index.md") %}
-    <a href="{{ section.permalink }}">{{ section.title }}</a>
-
-  </nav>
-</header>
+    <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
+  </div>
+</nav>
