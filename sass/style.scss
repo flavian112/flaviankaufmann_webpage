@@ -1,53 +1,50 @@
-$color_primary: black;
-$color_accent: dodgerblue;
-$color_muted: slategray;
-$color_background: white;
-$color_background_secondary: whitesmoke;
+:root {
+  --color-primary: #000000;
+  --color-accent: #1e90ff;
+  --color-muted: #708090;
+  --color-bg: #ffffff;
+  --color-bg-2: #f5f5f5;
 
-$font: monospace;
-$font_size: 12pt;
+  --font: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --font-size: 12pt;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #ffffff;
+    --color-accent: #1e90ff;
+    --color-muted: #a0a4ab;
+    --color-bg: #000000;
+    --color-bg-2: #1f1f1f;
+  }
+}
 
 * {
-  font-family: $font;
-  font-size: $font_size;
+  font-family: var(--font);
+  font-size: var(--font-size);
+  color: var(--color-primary);
 }
 
 body {
+  background: var(--color-bg);
   margin: 10pt;
   padding: 20px;
 }
 
-a {
-  color: $color_accent;
-  font-size: $font-size;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 1.2rem;
-}
-
-h3 {
-  font-size: 1.0rem;
-}
-
+a,
 .navlink {
-  color: $color_accent;
-  font-size: $font-size;
+  color: var(--color-accent);
+  font-size: var(--font-size);
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
+a:hover,
+.navlink:hover {
+  text-decoration: underline;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+h3 { font-size: 1.0rem; }
 
 .navbar {
   display: flex;
@@ -55,12 +52,18 @@ h3 {
 }
 
 .footer {
-  color: $color_muted;
+  color: var(--color-muted);
   padding: 20px;
   text-align: center;
 }
 
 .blogentry {
-  padding: 10px 0px;
+  padding: 10px 0;
+}
 
+.section,
+.card,
+pre,
+code {
+  background: var(--color-bg-2);
 }

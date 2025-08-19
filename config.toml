@@ -7,7 +7,6 @@ generate_feeds = true
 feed_filenames = ["atom.xml"]
 
 [markdown]
-highlight_code = true
-highlight_theme = "base16-ocean-light"
+highlight_code = false
 
 [extra]
