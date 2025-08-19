@@ -3,31 +3,17 @@
 
 <head>
   <meta charset="utf-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark">
-
   <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
 
-  <title>
-      {{ config.title }}
-  </title>
-
+  <title>{{ config.title }}</title>
 </head>
 
 <body>
-  <header>
-    {% include "navigation.html" %}
-  </header>
-
-  <main>
-    {% block content %}
-    {% endblock content %}
-  </main>
-
-  <footer>
-    <div class="footer">© {{ now() | date(format="%Y") }} Flavian Kaufmann (flaviankaufmann.ch)</div>
-  </footer>
+  <header>{% include "navigation.html" %}</header>
+  <main>{% block content %}{% endblock content %}</main>
+  <footer>{{ now() | date(format="%Y") }} Flavian Kaufmann (flaviankaufmann.ch)</footer>
 </body>
 
 </html>

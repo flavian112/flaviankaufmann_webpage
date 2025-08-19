@@ -1,10 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-
 <h1>{{ section.title }}</h1>
 <a href="{{ get_url(path="atom.xml") | safe }}">Atom Feed</a>
 {{ section.content | safe }}
-
 {% for page in section.pages | sort(attribute="date") | reverse %}
 <div class="blogentry">
   <a href="{{ page.permalink }}">{{ page.title }}</a><br>
@@ -12,5 +10,4 @@
   <div>{{ page.description }}</div>
 </div>
 {% endfor %}
-
 {% endblock content %}

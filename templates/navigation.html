@@ -1,18 +1,13 @@
 <nav>
-
   <div class="navbar">
     {% set section = get_section(path="_index.md") %}
     <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
-
     {% set section = get_section(path="links/_index.md") %}
     <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
-
     {% set section = get_section(path="blog/_index.md") %}
     <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
-
     {% set section = get_section(path="projects/_index.md") %}
     <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
-
     {% set section = get_section(path="about/_index.md") %}
     <a class="navlink" href="{{ section.permalink }}">{{ section.title }}</a>
   </div>
