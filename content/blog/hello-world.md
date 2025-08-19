@@ -1,8 +1,8 @@
 +++
 title = "Hello, World!"
 template = "blogpost.html"
-date = 2025-08-14
-updated = 2025-08-14
+date = 2025-08-18
+updated = 2025-08-18
 description = "Just testing... ;)"
 +++
 
