@@ -4,5 +4,5 @@ template = "section.html"
 +++
 
 Hello,<br>
-I'm Flavian Kaufmann and this is my personal Website.
+I'm Flavian and this is my personal Website ;)
 
