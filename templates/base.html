@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
 
@@ -11,9 +10,9 @@
 </head>
 
 <body>
-  <header>{% include "navigation.html" %}</header>
+  <header>{% include "navigation.html" %}<hr class="divider"></header>
   <main>{% block content %}{% endblock content %}</main>
-  <footer>{{ now() | date(format="%Y") }} Flavian Kaufmann (flaviankaufmann.ch)</footer>
+  <footer><hr class="divider">{{ now() | date(format="%Y") }} Flavian Kaufmann (flaviankaufmann.ch)</footer>
 </body>
 
 </html>

@@ -8,13 +8,17 @@ template = "section.html"
 Flavian Kaufmann<br>
 <flavian@flaviankaufmann.ch>
 
+
 ## Accounts
+
 [github.com/flavian112](https://github.com/flavian112)
+
 
 ## PGP Public Key
 
 Owner: Flavian Kaufmann &lt;flavian@flaviankaufmann.ch&gt;<br>
 Fingerprint: 914D 6F56 D22D AC24 FBB0  0954 D327 B8DE 9FCB 25FA
+
 
 ```text
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -61,3 +65,8 @@ e68F0Xf/NLcvxI6ltgw=
 =fiCv
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+
+
+## Website
+
+This website was statically generated with [zola](https://www.getzola.org).

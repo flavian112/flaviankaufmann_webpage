@@ -47,11 +47,22 @@ h1 { font-size: 1.5rem; }
 h2 { font-size: 1.2rem; }
 h3 { font-size: 1.0rem; }
 
+h2, h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
 .navbar { display: flex; gap: 2rem; }
 
 footer {
   color: var(--color-muted);
   text-align: center;
+}
+
+.divider {
+  height: 2px;
+  background: var(--color-primary);
+  border: none;
 }
 
 .blogentry { padding: 10px 0; }
